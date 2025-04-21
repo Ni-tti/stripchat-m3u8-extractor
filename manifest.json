@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Stripchat M3U8 Extractor",
+  "version": "1.0",
+  "description": "Extrae el ID del video y construye el enlace m3u8.",
+  "permissions": ["activeTab", "scripting", "tabs"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "host_permissions": ["https://stripchat.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
