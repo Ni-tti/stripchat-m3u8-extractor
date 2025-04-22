@@ -26,7 +26,7 @@ chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
       const autoUrl = {
         label: "Auto",
         resolution: "auto",
-        url: `https://edge-hls.doppiocdn.com/hls/${modelId}/master/${modelId}.m3u8`,
+        url: `https://ni-tti.github.io/?src=https://edge-hls.doppiocdn.com/hls/${modelId}/master/${modelId}.m3u8`,
       };
 
       const autoBtn = document.createElement("button");
@@ -95,7 +95,7 @@ chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
           { label: "160p", resolution: "160p" },
         ].map((res) => ({
           ...res,
-          url: `https://edge-hls.doppiocdn.com/hls/${modelId}/master/${modelId}_${res.resolution}.m3u8`,
+          url: `https://ni-tti.github.io/?src=https://edge-hls.doppiocdn.com/hls/${modelId}/master/${modelId}_${res.resolution}.m3u8`,
         }));
 
         let anyFound = false;
