@@ -161,7 +161,7 @@ function extractM3U8() {
   if (!meta) return null;
 
   const content = meta.getAttribute("content");
-  const match = content.match(/\/(\d+)_webp/);
+  const match = content.match(/\/(\d+)(?:\/)?$/);
   if (!match) return null;
 
   return { id: match[1] };
